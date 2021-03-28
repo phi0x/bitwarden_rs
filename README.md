@@ -124,38 +124,38 @@ Go to https://YOUR_DOMAIN_HERE/admin
 
 Login with the admin token from step 11.
 
-    18.1 Click on 'Settings', then 'General Settings'
+   18.1 Click on 'Settings', then 'General Settings'
     
-        18.2 Setup the 'Domain URL': https://YOUR_DOMAIN_HERE
+   18.2 Setup the 'Domain URL': https://YOUR_DOMAIN_HERE
         
-        20.3 Invitation organization name: example.com
+   18.3 Invitation organization name: example.com
 
-    18.4 Click on 'SMTP Email Settings' (note I use gmail smtp)
+   18.4 Click on 'SMTP Email Settings' (note I use gmail smtp)
     
-        18.5 'Enabled' check.
+   18.5 'Enabled' check.
         
-        20.6 'Host': smtp.gmail.com
+   18.6 'Host': smtp.gmail.com
         
-        22.7 'Enable Secure SMTP' check.
+   18.7 'Enable Secure SMTP' check.
         
-        24.8 'Port': 587
+   18.8 'Port': 587
         
-        26.9 'From Address': YOUR_EMAIL_HERE@gmail.com
+   18.9 'From Address': YOUR_EMAIL_HERE@gmail.com
         
-        28.10 'From Name': WHATEVER_NAME_YOU_WANT_HERE
+   18.10 'From Name': WHATEVER_NAME_YOU_WANT_HERE
         
-        30.11 'Username': YOUR_EMAIL_HERE@gmail.com
+   18.11 'Username': YOUR_EMAIL_HERE@gmail.com
         
-        32.12 'Password': APP_PASSWORD_HERE Note: generated App password for gmail. https://myaccount.google.com/apppasswords
+   18.12 'Password': APP_PASSWORD_HERE Note: generated App password for gmail. https://myaccount.google.com/apppasswords
 
 
-    18.13 Click on 'Email 2FA Settings'
+   18.13 Click on 'Email 2FA Settings'
     
-        18.14 'Enabled' check.
+   18.14 'Enabled' check.
 
-    18.15 click 'save'.
+   18.15 click 'save'.
     
-    20.16 Test SMTP via the 'SMTP Email Settings', 'Test SMTP': enter your email you'd like to test sending to and see if it works.
+   18.16 Test SMTP via the 'SMTP Email Settings', 'Test SMTP': enter your email you'd like to test sending to and see if it works.
 
 
 19. Setup backups, install sqlite3
