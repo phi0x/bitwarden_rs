@@ -47,7 +47,9 @@ sudo chmod go-rwx /srv/bitwarden
 ```
 
 11. Create the Docker container for bitwarden_rs with signups disabled and setup admin token along with setting U2F token domain. 
-note: Can generate an admin token with: openssl rand -base64 48
+note: Can generate an admin token with: 
+
+`openssl rand -base64 48`
 
 ```
 docker run -d --name bitwarden -v /srv/bitwarden:/data -e WEBSOCKET_ENABLED=true -e SIGNUPS_ALLOWED=false -e ADMIN_TOKEN="YOUR_TOKEN_HERE" -e DOMAIN=https://YOUR_DOMAIN_HERE -p 127.0.0.1:8080:80 -p 127.0.0.1:3012:3012 --restart on-failure bitwardenrs/server:latest
