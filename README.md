@@ -119,34 +119,51 @@ sudo docker start caddy
 Should see login screen.
 
 18. Configure admin settings
+
 Go to https://YOUR_DOMAIN_HERE/admin
+
 Login with the admin token from step 11.
 
     18.1 Click on 'Settings', then 'General Settings'
+    
         18.2 Setup the 'Domain URL': https://YOUR_DOMAIN_HERE
-        18.3 Invitation organization name: example.com
+        
+        20.3 Invitation organization name: example.com
 
     18.4 Click on 'SMTP Email Settings' (note I use gmail smtp)
+    
         18.5 'Enabled' check.
-        18.6 'Host': smtp.gmail.com
-        18.7 'Enable Secure SMTP' check.
-        18.8 'Port': 587
-        18.9 'From Address': YOUR_EMAIL_HERE@gmail.com
-        18.10 'From Name': WHATEVER_NAME_YOU_WANT_HERE
-        18.11 'Username': YOUR_EMAIL_HERE@gmail.com
-        18.12 'Password': APP_PASSWORD_HERE Note: generated App password for gmail. https://myaccount.google.com/apppasswords
+        
+        20.6 'Host': smtp.gmail.com
+        
+        22.7 'Enable Secure SMTP' check.
+        
+        24.8 'Port': 587
+        
+        26.9 'From Address': YOUR_EMAIL_HERE@gmail.com
+        
+        28.10 'From Name': WHATEVER_NAME_YOU_WANT_HERE
+        
+        30.11 'Username': YOUR_EMAIL_HERE@gmail.com
+        
+        32.12 'Password': APP_PASSWORD_HERE Note: generated App password for gmail. https://myaccount.google.com/apppasswords
+
 
     18.13 Click on 'Email 2FA Settings'
+    
         18.14 'Enabled' check.
 
     18.15 click 'save'.
-    18.16 Test SMTP via the 'SMTP Email Settings', 'Test SMTP': enter your email you'd like to test sending to and see if it works.
+    
+    20.16 Test SMTP via the 'SMTP Email Settings', 'Test SMTP': enter your email you'd like to test sending to and see if it works.
+
 
 19. Setup backups, install sqlite3
 
 `sudo apt-get install sqlite3`
 
 20. Create a directory for backups.
+
 ```
 sudo mkdir /srv/backup
 sudo chmod go-rwx /srv/backup
@@ -219,18 +236,22 @@ Should see output similar to:
 ```
 
 26. Setup SSH port to 22022
+
     26.1 edit ssh file
     
     `nano /etc/sshd/sshd_config`
 
     locate the '#Port 22' and update it to 'Port 22022'
+    
     26.2 restart sshd
     
     `service sshd restart`
     
     26.3 reconnect to your server via port 22022 to test that it works.
 
+
 27. Setup IP tables
+
     27.1 Install IPtables packages
     
     `apt-get install iptables iptables-persistent -y`
@@ -253,6 +274,7 @@ Should see output similar to:
 `iptables -L -v -n`
 
 Look for your rules you inserted in step 27.2.
+
 example INPUT chain:
 
 ```
