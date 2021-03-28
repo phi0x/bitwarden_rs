@@ -9,7 +9,7 @@ referenced: https://www.linode.com/docs/guides/how-to-self-host-the-bitwarden-rs
 
 2. Install package prerequisites for compatibility with the upstream Docker repository.
 
-`apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
+`sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
 
 3. Add the official Docker GPG repository key.
 
